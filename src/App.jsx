@@ -8,6 +8,7 @@ import Services from "./components/sections/Services.jsx";
 import Testimonials from "./components/sections/Testimonials.jsx";
 import Contact from "./components/sections/Contact.jsx";
 import Footer from "./components/layout/Footer.jsx";
+import Experience from "./components/sections/Experince.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         {/* <Services /> */}

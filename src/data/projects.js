@@ -4,9 +4,31 @@ import healthMonitoringImage from "../../public/projects/sleep_monitoring.png";
 import pharmacyImage from "../../public/projects/pharmacy.png";
 import trashTradeImage from "../../public/projects/trash_trade.png";
 import eCalendarImage from "../../public/projects/e_calendar.png";
+import smartPulseImage from "../../public/projects/fyp.png";
 
 export const projects = [
   {
+    id: 7,
+    title: "Advanced Wireless CSI Sensing for Recumbent Position Monitoring",
+    description:
+      "Final Year Research Project focused on contactless health monitoring using Wi-Fi Channel State Information (CSI). Developed machine learning models and a real-time monitoring platform to detect presence, body posture, respiration rate, and heart rate without wearable devices or cameras.",
+    image: smartPulseImage,
+    category: "Research",
+    technologies: [
+      "Python",
+      "Flutter",
+      "Machine Learning",
+      "ESP32",
+      "WebSocket",
+      "Signal Processing",
+      "Wi-Fi CSI"
+    ],
+    metrics: "high Accuracy in Posture & Vital Sign Monitoring",
+    demoUrl: "",
+    githubUrl: "",
+  },
+  {
+    
     id: 1,
     title: "Microservices-Based Online Shopping Platform",
     description:
@@ -131,6 +153,7 @@ export const categories = [
   "All",
   "Mobile App",
   "Full Stack",
+  "Research",
   "Wear OS",
 ];
 

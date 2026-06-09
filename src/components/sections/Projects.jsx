@@ -10,6 +10,7 @@ import {
   Layout,
   Plug,
   Watch,
+  BookOpen,
 } from "lucide-react";
 import ProjectCard from "../ui/ProjectCard.jsx";
 import FadeIn from "../animations/FadeIn.jsx";
@@ -62,6 +63,7 @@ const Projects = () => {
     "Mobile App": Smartphone,
     "Wear OS": Watch,
     "Full Stack": Layers,
+    "Research": BookOpen,
   };
 
   return (

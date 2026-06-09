@@ -38,7 +38,7 @@ const Testimonials = () => {
 
   return (
     <section
-      id="experience"
+      id="volunteering"
       className="relative py-20 bg-black overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
@@ -51,7 +51,7 @@ const Testimonials = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
               <Quote className="w-4 h-4 text-primary" />
               <span className="text-sm text-primary font-medium tracking-wider">
-                My Experience
+                My Volunteering Experience
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-xl mx-auto">
@@ -72,7 +72,7 @@ const Testimonials = () => {
               style={{ scrollSnapType: "x mandatory" }}
             >
               <div className="flex">
-                {testimonials.map((testimonial, index) => (
+                {testimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
                     className="w-full shrink-0 px-4"

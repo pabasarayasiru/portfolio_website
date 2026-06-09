@@ -4,6 +4,7 @@ export const PERSONAL_INFO = {
   role: "Computer Science & Engineering Undergraduate",
   email: "yasirupabasaracv@gmail.com",
   location: "University of Moratuwa | Sri Lanka",
+  phone: "+94 76 5480211",
   tagline:
     "Software Engineer with strong foundations in frontend, backend, and database systems.",
   resume: "/resume.pdf",
@@ -35,8 +36,9 @@ export const ABOUT_STATS = [
 
 export const NAV_LINKS = [
   { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
-  { id: "experience", label: "Experience" },
+  { id: "volunteering", label: "Volunteering" },
   { id: "contact", label: "Contact" },
 ];

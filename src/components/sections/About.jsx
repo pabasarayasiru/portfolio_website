@@ -18,6 +18,7 @@ import {
   SiDocker,
   SiTailwindcss,
   SiFirebase,
+  SiGit,
 } from "react-icons/si";
 
 import { TbBrandReactNative } from "react-icons/tb";
@@ -46,11 +47,13 @@ const About = () => {
 
     // Languages
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { name: "Java", icon: FaJava, color: "#3178C6" },
     { name: "Python", icon: SiPython, color: "#3776AB" },
 
     { name: "AWS", icon: FaAws, color: "#00599C" },
     { name: "Docker", icon: SiDocker, color: "#00599C" },
+    { name: "Git", icon: SiGit, color: "#00599C" },
     { name: "Firebase", icon: SiFirebase, color: "#00599C" },
   ];
 
