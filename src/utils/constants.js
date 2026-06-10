@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   phone: "+94 76 5480211",
   tagline:
     "Software Engineer with strong foundations in frontend, backend, and database systems.",
-  resume: "react_dev/public/resume.pdf",
+  resume: "../../public/resume.pdf",
   bio: [
     "Computer Science and Engineering undergraduate at the University of Moratuwa with hands-on industry experience in software engineering at KeenMind Mobile Solutions (Pvt) Ltd. Experienced in full-stack and mobile application development, with a strong foundation in designing and building scalable, efficient, and user-centric software solutions. Proficient in modern technologies and frameworks, with a strong focus on clean code, software quality, and real-world problem solving. Passionate about continuous learning and delivering high-quality software. Strong interests include Software Engineering, Mobile Application Development, AI-driven Applications, and Data Engineering."
   ],
