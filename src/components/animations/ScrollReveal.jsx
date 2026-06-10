@@ -1,5 +1,5 @@
 import React from "react";
-import {} from "../../hooks/useScrollReveal";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 import FadeIn from "./FadeIn";
 
 const ScrollReveal = (

@@ -53,8 +53,8 @@ function NavBar() {
                 onClick={() => handleNavClick(link.id)}
                 className={`text-base font-medium transition-all duration-300 ${
                   activeSection === link.id
-                    ? "text-white"
-                    : "text-white/70 hover:text-white"
+                    ? "text-white hover:text-primary"
+                    : "text-white/70 hover:text-primary"
                 }`}
               >
                 {link.label}

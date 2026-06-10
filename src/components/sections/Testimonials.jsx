@@ -35,6 +35,8 @@ const Testimonials = () => {
     { value: "100%", label: "On-Time Delivery" },
     { value: "5*", label: "Average Rating" },
   ];
+  
+  console.log(testimonialStats);
 
   return (
     <section

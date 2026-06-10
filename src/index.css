@@ -4,7 +4,56 @@
 @theme {
   --font-display: "Urbanist", sans-serif;
   --breakpoint-3xl: 1920px;
-  --color-primary: #8dff69;
+
+  /* =========================
+     Color System
+     ========================= */
+
+  /* Brand Colors */
+  /* --color-primary: #8dff69;
+  --color-primary-light: #a8ff8d;
+  --color-primary-dark: #6fe047;
+  --color-primary-hover: #5bc92e; */
+  /* Brand Colors */
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #2563eb;
+  --color-primary-hover: #1d4ed8;
+
+  /* Background Colors */
+  --color-background: #000000;
+  --color-background-secondary: #0a0a0a;
+
+  /* Text Colors */
+  --color-text: #ffffff;
+  --color-text-muted: #d1d5db;
+
+  /* Transparency */
+  --color-overlay-light: rgba(255, 255, 255, 0.3);
+  --color-overlay-medium: rgba(255, 255, 255, 0.5);
+
+
+      /* Skill Level Colors */
+
+    /* Expert = PRIMARY BLUE (highlighted) */
+    --color-level-expert: #7c3aed; /* blue-purple hybrid (premium highlight) */
+    --color-level-expert-bg: rgba(124, 58, 237, 0.15);
+    --color-level-expert-border: rgba(124, 58, 237, 0.35);
+
+    /* Advanced = CYAN (unchanged) */
+    --color-level-advanced: #22d3ee;
+    --color-level-advanced-bg: rgba(34, 211, 238, 0.15);
+    --color-level-advanced-border: rgba(34, 211, 238, 0.3);
+
+    /* Intermediate = PURPLE (unchanged) */
+    --color-level-intermediate: #a78bfa;
+    --color-level-intermediate-bg: rgba(167, 139, 250, 0.15);
+    --color-level-intermediate-border: rgba(167, 139, 250, 0.3);
+
+    /* Default */
+    --color-level-default: #9ca3af;
+    --color-level-default-bg: rgba(156, 163, 175, 0.15);
+    --color-level-default-border: rgba(156, 163, 175, 0.3);
 }
 
 @layer base {
@@ -16,33 +65,45 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--color-background);
+    color: var(--color-text);
     overflow-x: hidden;
   }
 
-  /* Custom Scrollbar Styles */
+  /* =========================
+     Scrollbar
+     ========================= */
+
   ::-webkit-scrollbar {
     width: 10px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #0a0a0a;
+    background: var(--color-background-secondary);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: linear-gradient(180deg, #8dff69, #6fe047);
+    background: linear-gradient(
+      180deg,
+      var(--color-primary),
+      var(--color-primary-dark)
+    );
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: linear-gradient(180deg, #a8ff8d, #5bc92e);
+    background: linear-gradient(
+      180deg,
+      var(--color-primary-light),
+      var(--color-primary-hover)
+    );
   }
 
-  /* Firefox Scrollbar Styles */
+  /* Firefox Scrollbar */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #6fe047 #0a0a0a;
+    scrollbar-color: var(--color-primary-dark)
+      var(--color-background-secondary);
   }
 
   /* Hide scrollbar for Carousel */
@@ -55,7 +116,10 @@
     display: none;
   }
 
-  /*Animation Keyframes*/
+  /* =========================
+     Animations
+     ========================= */
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -75,7 +139,19 @@
     }
   }
 
-  /*Utility Classes*/
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* =========================
+     Utility Classes
+     ========================= */
+
   .animate-fadeIn {
     animation: fadeIn 0.5s ease-out;
   }
@@ -88,16 +164,10 @@
     animation: spin 8s linear infinite;
   }
 
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  /* =========================
+     Line Clamp
+     ========================= */
 
-  /* Line Clamp */
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
