@@ -236,9 +236,9 @@ const Contact = () => {
                       <p className="text-sm text-white/60 mb-1">Email</p>
                       <a
                         href={`mailto:${PERSONAL_INFO.email}`}
-                        className="text-white hover:text-[#A8FF8D] transition-colors font-medium"
+                        className="text-white hover:text-primary transition-colors font-medium"
                       >
-                        {PERSONAL_INFO.email}
+                        {PERSONAL_INFO.email}   
                       </a>
                     </div>
                   </div>
@@ -252,11 +252,11 @@ const Contact = () => {
                     </div>
 
                     <div className="flex-1">
-                      <p className="text-sm text-white/60 mb-1">Phone</p>
+                      <p className="text-sm text-white/60 mb-1">Pho   ne</p>
 
                       <a
                         href={`tel:${PERSONAL_INFO.phone}`}
-                        className="text-white hover:text-[#A8FF8D] transition-colors font-medium"
+                        className="text-white hover:text-primary transition-colors font-medium"
                       >
                         {PERSONAL_INFO.phone}
                       </a>
